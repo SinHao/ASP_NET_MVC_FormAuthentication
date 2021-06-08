@@ -1,0 +1,15 @@
+﻿@model bool
+@{
+    ViewBag.Title = "UserIdentity";
+}
+
+@if (this.Model)
+{
+    <h1>Pass</h1>
+}
+else
+{
+    <h1>NG</h1>
+}
+
+@Html.ActionLink("Logout", "Logout", "Account")
